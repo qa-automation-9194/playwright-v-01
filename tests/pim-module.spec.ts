@@ -41,8 +41,8 @@ test("Visual Testing - for brand logo", {
     }
 }, async ({ goToUrl, leftNavPannel, pimPage }) => {
     await test.step("Visual Validation of Brand Logo", async () => {
-        await expect(leftNavPannel.brandLogo).toHaveScreenshot('brand-logo.png');
-        await expect(leftNavPannel.sideNavPanel).toHaveScreenshot('side-nav-panel.png');
+        await expect(leftNavPannel.brandLogo).toHaveScreenshot('brand-logo-chromium-darwin.png');
+        await expect(leftNavPannel.sideNavPanel).toHaveScreenshot('side-nav-panel-chromium-darwin.png');
 
     })
 
