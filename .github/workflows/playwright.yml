@@ -7,7 +7,7 @@ on:
 jobs:
   test:
     timeout-minutes: 60
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
@@ -17,6 +17,12 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+
+    - name: Force English Locale
+      run: |
+        setx LANG en_US.UTF-8
+        setx LANGUAGE en_US
+        setx LC_ALL en_US.UTF-8
     - name: Run Playwright tests
       run: npm run test-dev-tag
     - uses: actions/upload-artifact@v4
@@ -24,4 +30,4 @@ jobs:
       with:
         name: playwright-report
         path: playwright-report/
-        retention-days: 30
+        retention-days: 10
