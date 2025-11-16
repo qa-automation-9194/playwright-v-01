@@ -2,7 +2,7 @@ import { test } from "../fixtures/hooks-fixture"
 import { expect } from "@playwright/test";
 
 test("Add new employee is added successfully", {
-    tag: ['@pim'],
+    tag: ['@pim','@visual'],
     annotation: {
         type: 'feature- Test case link',
         description: 'Adding new employee in PIM module url of the link '
@@ -34,7 +34,7 @@ test("Add new employee is added successfully with test Step integration", {
 })
 
 test("Visual Testing - for brand logo", {
-    tag: ['@pim', '@visual'],
+    tag: ['@pim', ],
     annotation: {
         type: 'feature- Test case link',
         description: 'Visual testing for brand logo in PIM module url of the link '
