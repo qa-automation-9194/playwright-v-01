@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test-dev" : "ENV_NAME=DEV npx playwright test --project=chromium --headed ",
-    "test-dev-tag" : "ENV_NAME=DEV npx playwright test --project=chromium --headed --grep @visual"
+    "test-dev-tag" : "SECRET_KEY=HIMANSHU88 ENV_NAME=DEV npx playwright test --project=chromium --grep @visual",
+    "test-dev" : "ENV_NAME=DEV npx playwright test --project=chromium --headed --grep @visual"
   },
   "keywords": [],
   "author": "",
