@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test-dev" : "ENV_NAME=DEV npx playwright test --project=chromium --headed ",
-    "test-dev-tag" : "ENV_NAME=DEV npx playwright test --project=chromium --headed --grep @visual"
+    "test-dev": "ENV_NAME=DEV npx playwright test --project=chromium --headed ",
+    "test-dev-tag": "ENV_NAME=DEV npx playwright test --project=chromium --headed --grep @visual"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +12,8 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.56.1",
-    "@types/node": "^24.10.1"
+    "@types/node": "^24.10.1",
+    "cross-env": "^10.1.0"
   },
   "dependencies": {
     "crypto-js": "^4.2.0",
